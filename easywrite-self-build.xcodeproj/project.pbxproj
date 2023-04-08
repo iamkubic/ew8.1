@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		745AB9D229DEA6A40056960A /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745AB9D129DEA6A40056960A /* MainPageViewController.swift */; };
+		745BB41429E1144C00E0B9C6 /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745BB41329E1144C00E0B9C6 /* DrawingApp.swift */; };
 		74F8CC9329DDB32E00037881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8CC9229DDB32E00037881 /* AppDelegate.swift */; };
 		74F8CC9529DDB32E00037881 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8CC9429DDB32E00037881 /* SceneDelegate.swift */; };
-		74F8CC9729DDB32E00037881 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8CC9629DDB32E00037881 /* ViewController.swift */; };
 		74F8CC9A29DDB32E00037881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F8CC9829DDB32E00037881 /* Main.storyboard */; };
 		74F8CC9C29DDB32E00037881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F8CC9B29DDB32E00037881 /* Assets.xcassets */; };
 		74F8CC9F29DDB32E00037881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F8CC9D29DDB32E00037881 /* LaunchScreen.storyboard */; };
@@ -36,10 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		745AB9D129DEA6A40056960A /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		745AB9D329DEAB550056960A /* Known Issues.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Known Issues.md"; sourceTree = "<group>"; };
+		745BB41329E1144C00E0B9C6 /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
 		74F8CC8F29DDB32E00037881 /* easywrite-self-build.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "easywrite-self-build.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F8CC9229DDB32E00037881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F8CC9429DDB32E00037881 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74F8CC9629DDB32E00037881 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74F8CC9929DDB32E00037881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74F8CC9B29DDB32E00037881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74F8CC9E29DDB32E00037881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +79,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		745AB9CD29DE9BEA0056960A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				74F8CC9229DDB32E00037881 /* AppDelegate.swift */,
+				74F8CC9429DDB32E00037881 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		745AB9CE29DE9BFF0056960A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74F8CC9829DDB32E00037881 /* Main.storyboard */,
+				74F8CC9D29DDB32E00037881 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74D49BD929DE8B4000598A7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				745AB9D129DEA6A40056960A /* MainPageViewController.swift */,
+				745BB41329E1144C00E0B9C6 /* DrawingApp.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		74F8CC8629DDB32E00037881 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +129,12 @@
 		74F8CC9129DDB32E00037881 /* easywrite-self-build */ = {
 			isa = PBXGroup;
 			children = (
-				74F8CC9229DDB32E00037881 /* AppDelegate.swift */,
-				74F8CC9429DDB32E00037881 /* SceneDelegate.swift */,
-				74F8CC9629DDB32E00037881 /* ViewController.swift */,
-				74F8CC9829DDB32E00037881 /* Main.storyboard */,
+				745AB9CE29DE9BFF0056960A /* View */,
+				745AB9CD29DE9BEA0056960A /* Delegate */,
+				74D49BD929DE8B4000598A7D /* Controller */,
 				74F8CC9B29DDB32E00037881 /* Assets.xcassets */,
-				74F8CC9D29DDB32E00037881 /* LaunchScreen.storyboard */,
 				74F8CCA029DDB32E00037881 /* Info.plist */,
+				745AB9D329DEAB550056960A /* Known Issues.md */,
 			);
 			path = "easywrite-self-build";
 			sourceTree = "<group>";
@@ -258,8 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74F8CC9729DDB32E00037881 /* ViewController.swift in Sources */,
+				745AB9D229DEA6A40056960A /* MainPageViewController.swift in Sources */,
 				74F8CC9329DDB32E00037881 /* AppDelegate.swift in Sources */,
+				745BB41429E1144C00E0B9C6 /* DrawingApp.swift in Sources */,
 				74F8CC9529DDB32E00037881 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,11 +470,12 @@
 				DEVELOPMENT_TEAM = UBTA9S29J7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "easywrite-self-build/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Easywrite;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,11 +499,12 @@
 				DEVELOPMENT_TEAM = UBTA9S29J7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "easywrite-self-build/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Easywrite;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
